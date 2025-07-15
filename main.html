@@ -7,24 +7,27 @@
 	<style>
 
 		body{
-			height:100vh;
-			width:100vw;
-			display:flex;
-		align-items:center;
-			justify-content:center;
+			height:100vw;
+			mrargin:0px;
+			position:relative;
 		}
-		div{
-			color:purple;
+		.center-box{
 			width:200px;
 			height:200px;
 			background-color:lightblue;
-			border-color:black;
-			border-width:2px;
-			border-style:solid;
-			text-align:center;
-			display:flex;
-			align-items:center;
-			justify-content:center;
+			border:2px solid black;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
+		.center-text{
+			position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: purple;
+      font-family: Arial, sans-serif;
 		}
 	</style>
 </head>
@@ -32,7 +35,7 @@
 <body>
 	<!-- the entire body must be written by student -->
 
-	<div>
+	<div class="center-box"><div class="center-text">
 		This is center
 	</div>
 
